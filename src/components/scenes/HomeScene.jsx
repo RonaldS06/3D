@@ -92,7 +92,7 @@ const HomeScene = () => {
         fade
         speed={4}
       />
-      <Monitor position={[-7, 2, 2]} rotation-y={Math.PI / 5} />
+      <Monitor position={[-7, 2, 2]} rotation-y={3.5} />
     </>
   );
 };
