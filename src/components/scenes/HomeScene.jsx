@@ -3,6 +3,7 @@ import {
   GizmoHelper,
   GizmoViewport,
   OrbitControls,
+  PresentationControls,
   Stars,
 } from "@react-three/drei";
 import React from "react";
@@ -12,8 +13,14 @@ import { Monitor } from "../modelo";
 
 const HomeScene = () => {
   return (
-    <>
-      <OrbitControls />
+    <PresentationControls
+      global
+      config={{ mass: 2, tension: 500 }}
+      snap={{ mass: 4, tension: 1500 }}
+      rotation={[0, 0.3, 0]}
+      polar={[-Math.PI / 3, Math.PI / 3]}
+      azimuth={[-Math.PI / 1.4, Math.PI / 2]}
+    >
       <color attach="background" args={["#151520"]} />
       <pointLight
         position={[10, 15, 15]}
@@ -93,7 +100,7 @@ const HomeScene = () => {
         speed={4}
       />
       <Monitor position={[-7, 2, 2]} rotation-y={3.5} />
-    </>
+    </PresentationControls>
   );
 };
 

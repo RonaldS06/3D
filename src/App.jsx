@@ -1,5 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import HomeScene from "./components/scenes/HomeScene";
+import Intro from "./components/scenes/Intro";
 
 function App() {
   return (
@@ -12,10 +13,13 @@ function App() {
       </main>
       <Canvas
         className="canvas"
-        shadows
-        camera={{ position: [0, 30, 80], fov: 15 }}
+        concurrent
+        gl={{ alpha: false }}
+        pixelRatio={[1, 1.5]}
+        camera={{ position: [0, 3, 100], fov: 15 }}
       >
         <HomeScene />
+        <Intro />
       </Canvas>
     </>
   );
