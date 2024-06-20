@@ -16,7 +16,7 @@ function App() {
         concurrent
         gl={{ alpha: false }}
         pixelRatio={[1, 1.5]}
-        camera={{ position: [0, 3, 100], fov: 15 }}
+        camera={{ position: [10, 3, 100], fov: 15 }}
       >
         <HomeScene />
         <Intro />

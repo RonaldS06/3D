@@ -7,7 +7,7 @@ const Decorations = () => {
       <RoundedBox
         receiveShadow
         castShadow
-        position={[-7, 1, 1.6]}
+        position={[-7, 1, -2.6]}
         radius={0.015}
         smoothness={10}
         scale={[4.2, 2, 2]}
@@ -32,7 +32,7 @@ const Decorations = () => {
         receiveShadow
         castShadow
         rotation-x={-Math.PI / 2}
-        position={[8, 1.1, 2]}
+        position={[-8, 1.1, 2]}
         scale={[2, 2, 2]}
       >
         <boxGeometry args={[1, 1, 1, 3, 3, 3]} />
